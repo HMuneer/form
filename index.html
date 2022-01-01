@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<style type="text/css">
+body {
+	background-color:#a9d7e9;
+
+}
+.main-heading{
+	text-align:center;
+	font-size:45px;
+	font-family:"Times New Roman", Garamond , serif;
+	text-align:center;
+}
+#first-line{
+	padding:10px;
+}
+.form-body{
+	margin:auto;
+	background-color:#f3f3f3;
+	width:85%;
+	padding-top:5px;
+	padding-bottom:35px;
+	text-align:center;
+	border-radius:30px;
+}
+.name {
+	display:block;
+	text-align:left;
+	margin-left:20px;
+	font-family:fantasy;
+	margin-top:20px;
+	font-size:15px;
+	
+}
+.input{
+	padding:3px 20px;
+	margin-left:30px;
+	margin-top:15px;
+	display:block;
+}
+.radio {
+	padding:3px 20px;
+	margin-left:10px;
+	margin-top:15px;
+	text-align:left;
+}
+.description {
+	height:50px;
+	padding-bottom:30px;
+}
+.submit {
+	background-color:dodgerblue;
+	color:white;
+	padding-top:15px;
+	padding-right:25px;
+	padding-bottom:15px;
+	padding-left:25px;
+	margin-top:30px;
+	font-size:15px;
+}
+</style>
+</head>
+<body>
+<h1 class="main-heading">Good Vibes Form</h1>
+	<div class="form-body">
+	<h3 id="first-line">Tell us something positive that happened to you today.</h3>
+	<label for="name" id="Name" class="name">Name</label>
+	<input type="name" id="name" class="input" placeholder="Enter your name" required>
+	<label for="email" id="email" class="name">Email</label>
+	<input type="email" id="email" class="input" placeholder="Enter your email address" required>
+	<p class="name">On a scale of 1-10, how good was it?</p>
+	<input type="number" class="input" placeholder="Enter a number ">
+	<p class="name">Where did it happen?</p>
+	<select class="input">
+	<option>At home</option>
+	<option>On my commute</option>
+	<option>At work</option>
+	<option>On the street</option>
+	<option>Other</option>
+	</select>
+	<p class="name">At what time of day did it happen?</p>
+		<div class="radio">
+			<input type="radio" name="time">Morning<br>
+			<input type="radio" name="time">Afternoon<br>
+			<input type="radio" name="time">Evening<br>
+		</div>
+	<p class="name">What emotions did you experience?
+	(Select all that apply)</p>
+	<div class="radio">
+		<input type="checkbox">Excited<br>
+		<input type="checkbox">Humbled<br>
+		<input type="checkbox">Elated<br>
+		<input type="checkbox">Loved<br>
+		<input type="checkbox">Enthusiastic<br>
+	</div>
+	<p class="name">Please describe your positive experience.</p>
+	<input type="text" placeholder="Enter your experience here..." class="input description">
+	<input type="submit" class="submit">
+	</div>
+
+</div>
+</div>
+</body>
+</html>
